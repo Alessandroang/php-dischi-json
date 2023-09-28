@@ -1,0 +1,12 @@
+.album-container {
+  text-align: center;
+}
+
+.card-container img {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  margin-bottom: 20px;
+}
