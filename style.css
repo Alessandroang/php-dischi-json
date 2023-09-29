@@ -1,12 +1,46 @@
-.album-container {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+/* Stile per il body */
+body {
+  background-color: #333 !important;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenitore delle card */
+.card.album-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #444;
+  padding: 20px;
+  color: white;
   text-align: center;
 }
 
-.card-container img {
-  width: 100%;
-  height: auto;
+/* Stile per il testo nella card */
+.card p {
+  font-size: 0.7rem;
 }
 
-.card {
-  margin-bottom: 20px;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #343a40;
+  padding: 0.5rem 1rem;
+}
+
+header img {
+  max-height: 50px;
 }

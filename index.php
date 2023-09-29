@@ -27,7 +27,18 @@
     <title>Php Dischi-Json</title>
 </head>
 <body>
-<div id="app" class="container mt-5">
+<header class="navbar navbar-dark bg-dark fixed-top justify-content-around">
+        <a class="navbar-brand" href="#">
+          
+            <img src="./data/spotify-logo-png-10069.png" alt="Logo" >
+        </a>
+        <div class="navbar-text text-center">
+          <h1>Spotifly</h1>
+        </div>
+
+    </header>
+
+    <div id="app" class="container">
         <div class="row">
             <div v-for="(disco, index) in dischi" :key="index" class="col-md-4 mt-3">
                 <div class="card album-container">
@@ -36,13 +47,14 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">{{disco.title}}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">{{disco.author}}</h6>
-                        <p class="card-text">Year: {{disco.year}}</p>
-                        <p class="card-text">Genre: {{disco.genre}}</p>
+                        <h5>{{disco.author}}</h5>
+                        <h6>{{disco.year}}</h6>
+                        <h6>{{disco.genre}}</h6>
                     </div>
                 </div>
             </div>
         </div>
+    
     </div>
 </body>
 </html>
